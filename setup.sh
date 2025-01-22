@@ -10,4 +10,7 @@ echo 'export PATH="/etc/poetry/bin:$PATH"' >> ~/.bashrc
 export PATH="/etc/poetry/bin:$PATH"
 source ~/.bashrc
 
-poetry install
+poetry config virtualenvs.in-project true
+poetry config virtualenvs.create true
+
+poetry install --no-root
