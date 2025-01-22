@@ -14,3 +14,6 @@ poetry config virtualenvs.in-project true
 poetry config virtualenvs.create true
 
 poetry install --no-root
+
+source .venv/bin/activate
+jupyter notebook --no-browser --port=8080 --ip=0.0.0.0 --allow-root --NotebookApp.token='' --NotebookApp.password=''
