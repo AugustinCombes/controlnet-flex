@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "controlnet-flex"
+version = "0.1.0"
+description = ""
+authors = ["AugustinCombes <65305236+AugustinCombes@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+diffusers = "^0.32.2"
+jupyter = "^1.1.1"
+ipykernel = "^6.29.5"
+torch = "^2.5.1"
+transformers = "^4.48.1"
+protobuf = "^5.29.3"
+vastai = "^0.2.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
